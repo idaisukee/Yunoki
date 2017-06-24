@@ -24,11 +24,6 @@
 
 (define-sequential-command Yunoki-seq
     Yunoki-modern-char
-    Yunoki-next-char
-    Yunoki-next-char
-    Yunoki-next-char
-    Yunoki-next-char
-    Yunoki-next-char
     Yunoki-next-char)
 
 (provide 'Yunoki)
