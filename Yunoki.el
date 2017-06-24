@@ -31,11 +31,11 @@
     (if (equal Yunoki-index "0")
         t
         nil))
-;;悪
-;;驗 (princ (Yunoki-index))
+;;惡
+;;験 (princ (Yunoki-index))
 (defun Yunoki-next-char nil
     (interactive)
-    (Yunoki-common Yunoki-char-path))
+    (Yunoki-common Yunoki-next-char-path))
 
 (defun Yunoki-modern-char nil
     (interactive)
