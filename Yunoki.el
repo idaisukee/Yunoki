@@ -4,6 +4,7 @@
 (defvar Yunoki-path "/home/ieremius/prd/src/Yunoki.rb")
 (defvar Yunoki-next-char-path (s-concat Yunoki-path "/next_char.rb"))
 (defvar Yunoki-modern-char-path (s-concat Yunoki-path "/modern_char.rb"))
+(defvar Yunoki-index-path (s-concat Yunoki-path "/index.rb"))
 
 (defun Yunoki-common (path)
     (interactive)
@@ -15,7 +16,7 @@
     (forward-char))
 
 (defun Yunoki-modernp nil
-    (if (equal Yunoki-index "0")
+    (if (equal (Yunoki-index) "0")
         t
         nil))
 
