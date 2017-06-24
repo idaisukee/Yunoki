@@ -31,8 +31,7 @@
     (if (equal Yunoki-index "0")
         t
         nil))
-;;惡
-;;験 (princ (Yunoki-index))
+
 (defun Yunoki-next-char nil
     (interactive)
     (Yunoki-common Yunoki-next-char-path))
