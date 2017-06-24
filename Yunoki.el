@@ -1,4 +1,5 @@
 (require 's)
+(require 'sequential-command)
 
 (defvar Yunoki-path "/home/ieremius/prd/src/Yunoki.rb")
 (defvar Yunoki-next-char-path (s-concat Yunoki-path "/next_char.rb"))
@@ -20,5 +21,14 @@
 (defun Yunoki-modern-char nil
     (interactive)
     (Yunoki-common Yunoki-modern-char-path))
+
+(define-sequential-command Yunoki-seq
+    Yunoki-modern-char
+    Yunoki-next-char
+    Yunoki-next-char
+    Yunoki-next-char
+    Yunoki-next-char
+    Yunoki-next-char
+    Yunoki-next-char)
 
 (provide 'Yunoki)
